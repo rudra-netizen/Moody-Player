@@ -1,0 +1,83 @@
+.mood-Songs {
+  width: 100%;
+  padding: 3rem;
+  color: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: #0f0f1a; /* Darker professional background */
+  border-radius: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mood-Songs h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #fff, #a5a5a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.mood-Songs .song {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.mood-Songs .song:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(10px);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.mood-Songs .title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #efefef;
+  font-weight: 600;
+}
+
+.mood-Songs .title p {
+  margin: 4px 0 0 0;
+  font-size: 0.85rem;
+  color: #88889b;
+}
+
+.mood-Songs .play-pause-button button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mood-Songs .play-pause-button button:hover {
+  transform: scale(1.1);
+  background: #6366f1;
+  color: #fff;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .mood-element,
+  .mood-Songs {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}

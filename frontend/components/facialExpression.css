@@ -1,0 +1,51 @@
+.mood-element {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  justify-content: flex-start;
+  padding: 3rem;
+  /* Deep Obsidian Gradient */
+  background: linear-gradient(145deg, #161625, #1c1c2d);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  flex-wrap: wrap;
+}
+
+.mood-element button {
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: #e0e0e0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mood-element button:hover {
+  background: #6366f1; /* Modern Indigo */
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+  border-color: transparent;
+}
+
+.user-video-feed {
+  width: 28rem;
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+}
+
+.user-video-feed:hover {
+  border-color: #6366f1;
+  transform: scale(1.01);
+}
